@@ -1,10 +1,18 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true,
-  },
-})
+  import { useRouter } from 'vue-router'
+
+  defineProps({
+    msg: {
+      type: String,
+      required: true,
+    },
+  })
+
+  const router = useRouter()
+
+  function goToLogin() {
+    router.push('/login')
+  }
 </script>
 
 <template>
@@ -13,7 +21,9 @@ defineProps({
 
     <h4>AI OCR 기능을 제공합니다. 간단한 회원 가입 후 이용해보세요.<br></h4>
     <h3>
-      <a href="https://vite.dev/" target="_blank" rel="noopener" style="margin-right: 10px">로그인</a>
+<!--      <button @click="goToLogin">로그인</button>-->
+
+      <a href="#" @click.prevent="goToLogin" target="_blank" rel="noopener" style="margin-right: 10px">로그인</a>
       <a href="https://vuejs.org/" target="_blank" rel="noopener">회원가입</a>
     </h3>
   </div>
