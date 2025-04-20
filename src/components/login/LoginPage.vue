@@ -1,11 +1,9 @@
 <script setup>
-import HelloWorld from '../home/HelloWorld.vue'
 </script>
 
 <template>
   <div class="login-wrapper">
     <img @click="home" alt="Vue logo" class="logo" src="../../assets/free-icon.png" width="125" height="125" />
-<!--    <HelloWorld msg="로그인" />-->
 
     <div class="form-area">
       <input v-model="userId" type="text" placeholder="아이디" class="input" />
