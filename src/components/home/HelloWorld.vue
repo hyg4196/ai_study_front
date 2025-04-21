@@ -13,6 +13,10 @@
   function goToLogin() {
     router.push('/login')
   }
+
+  function goToSignup() {
+    router.push('/signup')
+  }
 </script>
 
 <template>
@@ -24,7 +28,7 @@
 <!--      <button @click="goToLogin">로그인</button>-->
 
       <a href="#" @click.prevent="goToLogin" target="_blank" rel="noopener" style="margin-right: 10px">로그인</a>
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">회원가입</a>
+      <a href="#" @click.prevent="goToSignup" target="_blank" rel="noopener">회원가입</a>
     </h3>
   </div>
 </template>
