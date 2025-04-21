@@ -96,22 +96,6 @@ export default {
   background-color: #00b0d6;
 }
 
-.signup-text {
-  color: #ccc;
-  margin-top: 16px;
-  font-size: 14px;
-}
-
-.signup-link {
-  color: #00cfff;
-  margin-left: 6px;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.signup-link:hover {
-  color: #00e0ff;
-}
 
 html, body {
   margin: 0;
